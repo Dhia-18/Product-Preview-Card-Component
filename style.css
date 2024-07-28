@@ -1,0 +1,116 @@
+:root{
+    --dark-cyan:hsl(158, 36%, 37%);
+    --cream:hsl(30, 38%, 92%);
+    --very-dark-blue:hsl(212, 21%, 14%);
+    --dark-grayish-blue:hsl(228, 12%, 48%);
+}
+
+*{
+    margin:0;
+    padding:0;
+    font-family: "Montserrat";
+}
+
+h1{
+    font-family: "Fraunces";
+    font-weight: 700;
+    color:var(--very-dark-blue);
+    margin:1rem 0;
+}
+
+p{
+    color:var(--dark-grayish-blue);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#desktop-img{
+    display: none;
+}
+
+#mobile-img{
+    width:100%;
+    border-radius: 10px 10px 0 0;
+}
+
+body{
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width:90%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#details{
+    padding:1.5rem;
+}
+
+#perfum{
+    letter-spacing: 3px;
+}
+
+#price{
+    display: flex;
+    align-items: center;
+    gap:1.5rem;
+}
+
+#price h1{
+    color:var(--dark-cyan);
+}
+
+#price p{
+    text-decoration: line-through;
+}
+
+button{
+    cursor: pointer;
+    width:100%;
+    padding:0.8rem;
+
+    background-color:var(--dark-cyan);
+    border:none;
+    border-radius: 5px;
+
+
+    display: flex;
+    justify-content: center;
+    gap:0.5rem;
+}
+
+button p{
+    color:white;
+    font-weight: 500;
+}
+
+button:hover{
+    background-color:hsl(158, 36%, 15%) ;
+}
+
+@media screen and (min-width:600px) {
+    #desktop-img{
+        width:50%;
+        height: 400px;
+        display: block;
+        border-radius: 10px 0 0 10px;
+    }
+
+    #mobile-img{
+        display: none;
+    }
+
+    main{
+        width:600px;
+        display: flex;
+    }
+
+    #details{
+        width:50%;
+    }
+}
